@@ -281,8 +281,14 @@ header:after {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
    .navbarcontainer {
      display: none;
    }
+}
+
+
+#logo
+{
+  background-image:url('../images/pNewsRoom.png');
 }
