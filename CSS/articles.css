@@ -279,3 +279,10 @@ header:after {
     transform: rotateZ(-4deg);
   }
 }
+
+
+@media screen and (max-width: 600px) {
+   .navbarcontainer {
+     display: none;
+   }
+}

@@ -19,9 +19,8 @@ const Navbar = (props) =>{
           <ul className="right">
 
 
-                   <a className="brand-logo left">PTimes</a>
+                   <Link to="/" className="brand-logo left"><img src="prophecynewsroom.png" alt="Prophecy News Room"/></Link>
 
-            <li><Link to="/">Home</Link></li>
             <li><NavLink to="/about">About</NavLink></li>
             <li><Link to="/contact">Timeline</Link></li>
             <li><Link to="/article">News Room</Link></li>
