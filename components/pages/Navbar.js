@@ -19,7 +19,7 @@ const Navbar = (props) =>{
           <ul className="right">
 
 
-                   <Link to="/" className="brand-logo left"><div id="logo"></div></Link>
+                   <Link to="/" className="brand-logo left"><img id="logo" src='/images/pNewsRoom.png'/></Link>
 
             <li><NavLink to="/about">About</NavLink></li>
             <li><Link to="/contact">Timeline</Link></li>
