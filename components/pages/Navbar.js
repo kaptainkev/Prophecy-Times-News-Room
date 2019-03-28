@@ -16,10 +16,11 @@ const Navbar = (props) =>{
      <nav className="navbarcontainer">
       <div className = "container">
         <div className="glyphicon glyphicon-plane"></div>
+          <Link to="/" className="brand-logo left"><img id="logo" src ="images/prophecynewsroom.png"/></Link>
           <ul className="right">
 
 
-                   <li><Link to="/" className="brand-logo left"><img id="logo" src ="images/pNewsRoom.png"/></Link></li>
+
 
             <li><NavLink to="/about">About</NavLink></li>
             <li><Link to="/contact">Timeline</Link></li>
