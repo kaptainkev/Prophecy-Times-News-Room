@@ -16,7 +16,7 @@ const Navbar = (props) =>{
      <nav className="navbarcontainer">
       <div className = "container">
         <div className="glyphicon glyphicon-plane"></div>
-          <Link to="/" className="brand-logo left"><img id="logo" src ="images/prophecynewsroom.png"/></Link>
+          <Link to="/" className="brand-logo left"><img id="logo" /></Link>
           <ul className="right">
 
 
