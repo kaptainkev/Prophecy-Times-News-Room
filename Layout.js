@@ -16,6 +16,7 @@ import ArticleView from './components/pages/ArticleView';
 
 import Temp from './components/pages/Temp';
 
+
 export default class Layout extends Component {
   constructor() {
     super();

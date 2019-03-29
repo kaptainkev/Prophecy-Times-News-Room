@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button } from 'reactstrap';
 import {Link, NavLink, withRouter} from 'react-router-dom';
+import { FaBeer } from 'react-icons/gi';
 
 
 
@@ -12,11 +13,11 @@ const Navbar = (props) =>{
 
   return (
     <div>
-    
      <nav className="navbarcontainer">
       <div className = "container">
         <div className="glyphicon glyphicon-plane"></div>
-          <Link to="/" className="brand-logo left"><img id="logo" /></Link>
+          <Link to="/" className="brand-logo left"><h6>Prophecy News <FaBeer class='GiTorch'/></h6>
+         </Link>
           <ul className="right">
 
 

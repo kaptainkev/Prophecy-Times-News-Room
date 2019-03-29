@@ -12,6 +12,7 @@ import 'bootstrap/dist/js/bootstrap.js';
 import BookView from './components/pages/BookView';
 import ArticleView from './components/pages/ArticleView';
 
+
 class App extends Component {
   constructor() {
     super();
@@ -26,7 +27,7 @@ class App extends Component {
     return (
       <div>
         <Hello name={this.state.name} />
-        
+
         <p>
         </p>
       </div>
