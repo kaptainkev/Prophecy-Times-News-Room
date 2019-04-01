@@ -5,7 +5,6 @@ import { GiTorch } from 'react-icons/gi';
 
 
 
-
 const Navbar = (props) =>{
 
   //console.log(props);
@@ -16,7 +15,8 @@ const Navbar = (props) =>{
      <nav className="navbarcontainer">
       <div className = "container">
         <div className="glyphicon glyphicon-plane"></div>
-          <Link  to="/" className="brand-logo left font"><h6>P-News<GiTorch /></h6>
+          <Link  to="/" className="brand-logo left font">
+          <h6>P-News<GiTorch /></h6>
          </Link>
           <ul className="right">
 
@@ -50,6 +50,11 @@ const Navbar = (props) =>{
     </button>
   </nav>
 </div>
+
+
+
+
+
     </div>
   )
 
