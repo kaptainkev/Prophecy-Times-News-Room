@@ -16,7 +16,7 @@ const Navbar = (props) =>{
       <div className = "container">
         <div className="glyphicon glyphicon-plane"></div>
           <Link  to="/" className="brand-logo left font">
-          <h6>P-News<GiTorch /></h6>
+          <h6 className="pnews">P-NEWS<  GiTorch className= "pnews"/></h6>
          </Link>
           <ul className="right">
 
