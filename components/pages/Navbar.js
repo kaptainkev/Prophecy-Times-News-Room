@@ -16,7 +16,8 @@ const Navbar = (props) =>{
       <div className = "container">
         <div className="glyphicon glyphicon-plane"></div>
           <Link  to="/" className="brand-logo left font">
-          <p className="PNews shadowLogo">P-News<GiTorch className= " shadowLogo"/></p>
+          <p className="PNews shadowLogo">P-News<GiTorch className= " shadowLogo"/><span className="ShapeNews"></span></p>
+          
          </Link>
           <ul className="right">
 
@@ -44,11 +45,7 @@ const Navbar = (props) =>{
 
     </div>
   </div>
-  <nav class="navbar navbar-dark bg-dark">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  </nav>
+  
 </div>
 
 
