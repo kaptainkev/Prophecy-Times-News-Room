@@ -309,13 +309,32 @@ header:after {
 }
 
 .ShapeNews{
+       filter: drop-shadow(0 0 0.75rem orange);
+
   	width: 0;
 	height: 0;
-  top: 500px;
-	border-left: 25px solid transparent;
-	border-right: 5px solid transparent;
-	border-top: 50px solid #555;
+  top: -15px;
+  position: relative;
+	border-left: 120px solid transparent;
+	border-right: 2px solid transparent;
+	border-top: 30px solid #30CFD0;
+
 } 
+
+.leftShape{
+  left: 28px;
+}
+
+.rightShape{
+  top: -45px;
+}
+.flipShape{
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+}
 a:hover{
   text-decoration: none;
   color: aquamarine;
