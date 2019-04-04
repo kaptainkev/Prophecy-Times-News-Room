@@ -296,6 +296,7 @@ header:after {
 {
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-style:oblique;
+  font-size:35px;
   text-align: left; 
   font-weight: 900; 
 	background: linear-gradient(to right, #30CFD0 0%, #1bc77f 100%);
@@ -304,7 +305,10 @@ header:after {
   padding-right:6px;
 	color:white;
    filter: drop-shadow(0 0 0.75rem orange);
-   
+   height:14px;
+   border-bottom-left-radius: 80px 80px;
+      border-top-right-radius: 80px 80px;
+  
 }
 
 
