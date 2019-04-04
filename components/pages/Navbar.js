@@ -17,8 +17,6 @@ const Navbar = (props) =>{
         <div className="glyphicon glyphicon-plane"></div>
           <Link  to="/" className="brand-logo left font">
           <p className="PNews shadowLogo">P-News<GiTorch className= " shadowLogo"/></p>
-          <div className="ShapeNews leftShape"></div>
-          <div className="ShapeNews flipShape rightShape"></div>
 
          </Link>
           <ul className="right">
