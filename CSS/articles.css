@@ -294,6 +294,8 @@ header:after {
 
 .PNews
 {
+   animation: fade-slide-down 2s .5s cubic-bezier(0, 0.5, 0, 1) forwards;
+
   font-family: Righteous;
   font-size:20px;
   text-align: left; 
@@ -303,13 +305,18 @@ header:after {
   left: -2px;
   padding-right:6px;
 	color:white;
-   filter: drop-shadow(0 0 0.75rem orange);
    height:14px;
    border-bottom-left-radius: 80px 80px;
       border-top-right-radius: 80px 80px;
   text-shadow: #FC0 1px 0 10px;
 }
 
+.PNews:hover{
+     filter: drop-shadow(0 0 0.75rem orange);
+  /*-webkit-animation: load1 2s infinite ease-in-out;
+  animation: load1 2s infinite ease-in-out;
+   */
+}
 .TrebuchetFont
 {
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
