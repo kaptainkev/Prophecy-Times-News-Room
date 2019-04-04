@@ -201,7 +201,7 @@ header:before {
 }
 
 header:after {
-  animation: rotate-up .5s .5s cubic-bezier(0, 0.5, 7, 1) forwards;
+  animation: rotate-up .5s .5s cubic-bezier(0, 0.5, 1, 1) forwards;
   background: #F9FCFF;
   content: "";
   height: 70rem;
