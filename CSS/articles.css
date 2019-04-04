@@ -292,13 +292,19 @@ header:after {
 @import url(https://fonts.googleapis.com/css?family=Bevan);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
 
+
+.PNews:after{
+  	background: linear-gradient(to right, #30CFD0 0%, #1bc77f 100%);
+
+}
 .PNews
 {
-   animation: fade-slide-down 2s .5s cubic-bezier(0, 0.5, 0, 1) forwards;
+  /* animation: fade-slide-down 2s .5s cubic-bezier(0, 0.5, 0, 1) forwards; */
 
   font-family: Righteous;
   font-size:20px;
   text-align: left; 
+  font-style: oblique;
   font-weight: 900; 
 	background: linear-gradient(to right, #30CFD0 0%, #1bc77f 100%);
   padding-left:15px;
@@ -313,9 +319,9 @@ header:after {
 
 .PNews:hover{
      filter: drop-shadow(0 0 0.75rem orange);
-  /*-webkit-animation: load1 2s infinite ease-in-out;
+  -webkit-animation: load1 2s infinite ease-in-out;
   animation: load1 2s infinite ease-in-out;
-   */
+   
 }
 .TrebuchetFont
 {
