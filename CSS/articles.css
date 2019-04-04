@@ -311,7 +311,10 @@ header:after {
   text-shadow: #FC0 1px 0 10px;
 }
 
-
+.TrebuchetFont
+{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
 
 a:hover{
