@@ -16,7 +16,9 @@ const Navbar = (props) =>{
       <div className = "container">
         <div className="glyphicon glyphicon-plane"></div>
           <Link  to="/" className="brand-logo left font">
-          <p className="PNews shadowLogo">P-News <i class="material-icons right">money</i>
+          <p className="PNews ">P-News
+<i class="fa fa-newspaper-o shadowLogo right "></i>
+
           </p>
 
          </Link>

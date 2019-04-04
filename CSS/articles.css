@@ -320,9 +320,9 @@ a:hover{
 }
 
 .shadowLogo {
-  z-index: -1;
-  color: #fff;
-    
+  top: 15px;
+  left:-5px;
+  position:relative;    
 }
 
 
