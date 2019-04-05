@@ -281,7 +281,7 @@ header:after {
 }
 
 
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 500px) {
    .navbarcontainer {
      display: none;
    }
@@ -302,7 +302,7 @@ header:after {
   /* animation: fade-slide-down 2s .5s cubic-bezier(0, 0.5, 0, 1) forwards; */
 
   font-family: Righteous;
-  font-size:20px;
+  font-size:30px;
   text-align: left; 
   font-weight: 900; 
 	background: linear-gradient(to right, #30CFD0 0%, #1bc77f 100%);
