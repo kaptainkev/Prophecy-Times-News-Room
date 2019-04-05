@@ -313,15 +313,14 @@ header:after {
    height:14px;
    border-bottom-left-radius: 80px 80px;
       border-top-right-radius: 80px 80px;
-          text-shadow: #1bc77f 1px 0 2px; 
+          text-shadow : gray 0 2px; 
 
 }
 
 .PNews:hover{
-     filter: drop-shadow(0 0 0.75rem orange);
   -webkit-animation: load1 2s infinite ease-in-out;
   animation: load1 2s infinite ease-in-out;
-          text-shadow: orange 1px 0 2px; 
+          text-shadow: orange 2px 0 2px; 
 
 
 }
