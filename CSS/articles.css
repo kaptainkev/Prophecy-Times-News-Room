@@ -301,8 +301,8 @@ header:after {
 {
   /* animation: fade-slide-down 2s .5s cubic-bezier(0, 0.5, 0, 1) forwards; */
 
-  font-family: Righteous;
-  font-size:25px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size:20px;
   text-align: left; 
   font-weight: 900; 
 	background: linear-gradient(to right, #30CFD0 0%, #1bc77f 100%);
@@ -313,6 +313,7 @@ header:after {
    height:14px;
    border-bottom-left-radius: 80px 80px;
       border-top-right-radius: 80px 80px;
+          text-shadow: #1bc77f 1px 0 2px; 
 
 }
 
@@ -320,7 +321,7 @@ header:after {
      filter: drop-shadow(0 0 0.75rem orange);
   -webkit-animation: load1 2s infinite ease-in-out;
   animation: load1 2s infinite ease-in-out;
-          text-shadow: #FC0 1px 0 2px; 
+          text-shadow: orange 1px 0 2px; 
 
 
 }
