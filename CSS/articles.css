@@ -302,7 +302,7 @@ header:after {
   /* animation: fade-slide-down 2s .5s cubic-bezier(0, 0.5, 0, 1) forwards; */
 
   font-family: Righteous;
-  font-size:30px;
+  font-size:25px;
   text-align: left; 
   font-weight: 900; 
 	background: linear-gradient(to right, #30CFD0 0%, #1bc77f 100%);
