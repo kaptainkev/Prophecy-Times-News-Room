@@ -334,7 +334,7 @@ header:after {
 }
 
 
-a:hover{
+.NavFont:hover{
   text-decoration: none;
   color: aquamarine;
 }
