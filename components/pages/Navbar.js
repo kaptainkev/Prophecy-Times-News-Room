@@ -29,7 +29,7 @@ const Navbar = (props) =>{
             <li><NavLink className="" to="/about">About <i className="material-icons right">chrome_reader_mode
 </i></NavLink></li>
             <li><Link className="" to="/contact">Timeline <i className="material-icons right  ">timelapse</i></Link></li>
-            <li><Link className="" to="/article">News Room <i className="material-icons right">cast_connected</i></Link></li>
+            <li><Link className="" to="/article">News <i className="material-icons right">cast_connected</i></Link></li>
 
           </ul>
         </div>
