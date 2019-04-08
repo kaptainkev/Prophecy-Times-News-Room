@@ -336,7 +336,9 @@ header:after {
 
 .NavFont:hover{
   text-decoration: none;
-  color: aquamarine;
+  color: white;
+  text-shadow: orange 1.5px 0 1.5px; 
+
 }
 
 .shadowLogo {
@@ -479,6 +481,7 @@ div.foo{
   font-size: 100px;
 }
 
-.nav{
-  height:55px;
+.navbarcontainer{
+  	background: linear-gradient(to right, rgb(3, 163, 184) 0%, rgba(16, 235, 199, 0.89) 100%);
+
 }
