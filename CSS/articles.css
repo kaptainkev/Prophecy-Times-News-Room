@@ -326,11 +326,13 @@ header:after {
 }
 .TrebuchetFont
 {
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: Righteous;
+}
+.NavFont
+{
+  font-family: Righteous;
 }
 
-.SubFont{
-}
 
 a:hover{
   text-decoration: none;
