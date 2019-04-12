@@ -31,20 +31,6 @@ displayDefaultArticles(){
       { 
 
       displaypostshtml = articles.map( posts => 
-    
-      
-      /*if(index == 0)
-      {
-          console.log("TEST");
-      return( <div className="posts card" key={posts.author}>
-              <div>First Entry:</div>
-              <div className="card-content">
-                <span className="card-title">{posts.description}</span>
-                <p>{posts.content}</p>
-              </div>
-
-              </div> )      
-      }*/
       {
         var index = articles.findIndex(k => k == posts);
        
@@ -66,7 +52,11 @@ displayDefaultArticles(){
 }
 
 
-render(){
+render()
+{
+  //this.displayDefaultArticles();
+  return(<div>ARTICLE FORMATTER </div>);
+
 }
 
 }

@@ -5,7 +5,7 @@ import axios from 'axios';
 
 import '../../CSS/articles.css';
 
-
+import ArticleFormatter from '../services/newsAPI/ArticleFormatter';
 
 export default class ArticleView extends Component {
   constructor() {
@@ -140,7 +140,8 @@ handleChange(e){
                     <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                      
                
-
+                <br/>
+                <ArticleFormatter/>
 
                 <input onChange={this.handleChange.bind(this)} class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
