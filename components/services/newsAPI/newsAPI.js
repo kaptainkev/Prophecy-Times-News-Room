@@ -5,7 +5,7 @@ import axios from 'axios';
 
 
 
-export default class NewsAPI extends Component {
+export default class newsAPI extends Component {
   constructor() {
     super();
     this.state = {search: ""};
@@ -15,7 +15,7 @@ export default class NewsAPI extends Component {
 
 componentDidMount()
 {
-    this.GetNewsAPIData("");
+   // this.GetNewsAPIData("");
 }
 
 GetNewsAPIData(searchVal)
@@ -30,7 +30,6 @@ this.setState({search: searchVal});
   axios({
         method: 'get',
         url: accessUrl,
-        
       })
     .then(function (data) {
       //console.log('Success ' + JSON.stringify(data))
@@ -41,7 +40,11 @@ this.setState({search: searchVal});
     .catch(function (error) {
       console.log('Error ' + error.message)
     });       
-
 }
+
+
+
+
+
 }
 

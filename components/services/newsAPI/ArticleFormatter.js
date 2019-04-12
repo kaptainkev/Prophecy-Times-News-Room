@@ -2,17 +2,20 @@ import React, { Component } from 'react';
 import { render } from 'react-dom';
 import {router, Route, IndexRoute, hashHistory} from "react-router"; 
 import axios from 'axios';
-
+import newsAPI from '../newsAPI/newsAPI';
 export default class ArticleFormatter extends Component {
 
+ constructor() {
+    super();
+    this.state = {search: ""};
 
+}
 componentDidMount()
 {
 }
 
  
 displayDefaultArticles(){
-
     const posted = this.state.posted;
     const displaypostshtml = 0;
     if (displaypostshtml == 0)
@@ -54,8 +57,10 @@ displayDefaultArticles(){
 
 render()
 {
-  //this.displayDefaultArticles();
-  return(<div>ARTICLE FORMATTER </div>);
+  this.displayDefaultArticles();
+  
+  return(<div>ARTICLE FORMATTER  <newsAPI/
+  > </div>);
 
 }
 
