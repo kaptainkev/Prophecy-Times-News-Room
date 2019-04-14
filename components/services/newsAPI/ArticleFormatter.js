@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { render } from 'react-dom';
 import {router, Route, IndexRoute, hashHistory} from "react-router"; 
 import axios from 'axios';
-import newsAPI from '../newsAPI/newsAPI';
+import NewsAPI from '../newsAPI/NewsAPI';
 export default class ArticleFormatter extends Component {
 
  constructor() {
@@ -59,8 +59,7 @@ render()
 {
   this.displayDefaultArticles();
   
-  return(<div>ARTICLE FORMATTER  <newsAPI/
-  > </div>);
+  return(<div>ARTICLE FORMATTER </div>);
 
 }
 

@@ -5,7 +5,7 @@ import axios from 'axios';
 
 
 
-export default class newsAPI extends Component {
+export default class NewsAPI extends Component {
   constructor() {
     super();
     this.state = {search: ""};
