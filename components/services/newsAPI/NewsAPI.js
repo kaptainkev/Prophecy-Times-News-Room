@@ -6,8 +6,8 @@ import axios from 'axios';
 
 
 export default class NewsAPI extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {search: ""};
 
 }
@@ -15,7 +15,7 @@ export default class NewsAPI extends Component {
 
 componentDidMount()
 {
-   // this.GetNewsAPIData("");
+   this.GetNewsAPIData("");
 }
 
 GetNewsAPIData(searchVal)
@@ -44,7 +44,14 @@ this.setState({search: searchVal});
 
 
 
+render(){
 
+
+  return(
+
+    <h1> {this.props.searchVal} </h1>
+  );
+}
 
 }
 

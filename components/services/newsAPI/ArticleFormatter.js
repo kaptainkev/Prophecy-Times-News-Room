@@ -43,23 +43,20 @@ displayDefaultArticles(){
                 <p>{posts.content}</p>
               </div>
 
-              </div> )
-
-
-   
-    })
- } 
-
- 
-}
+              </div> 
+              )
+      })
+      } 
+  }
 }
 
 
 render()
 {
   this.displayDefaultArticles();
-  
-  return(<div>ARTICLE FORMATTER </div>);
+  return(<div>ARTICLE FORMATTER
+          <NewsAPI searchVal = "water"/>
+          </div>);
 
 }
 
