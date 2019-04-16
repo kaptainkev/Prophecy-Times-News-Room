@@ -17,7 +17,7 @@ export default class ArticleView extends Component {
 
 componentDidMount()
 {
-    this.GetNewsAPIData("");
+    //this.GetNewsAPIData("");
 }
 
 GetNewsAPIData(searchVal)
@@ -57,7 +57,7 @@ handleChange(e){
     const displaypostshtml = 0;
     if (displaypostshtml == 0)
     {
-      displaypostshtml =  <div class="loader">Loading...</div>; 
+      //displaypostshtml =  <div class="loader">Loading...</div>; 
       if(posted != undefined)
       {
         displaypostshtml = <div><p>No Results for {this.state.search}</p></div>

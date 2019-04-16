@@ -54,8 +54,9 @@ displayDefaultArticles(){
 render()
 {
   this.displayDefaultArticles();
+
   return(<div>ARTICLE FORMATTER
-          <NewsAPI searchVal = "water"/>
+          <NewsAPI searchVal = "notre dame" p/>
           </div>);
 
 }
