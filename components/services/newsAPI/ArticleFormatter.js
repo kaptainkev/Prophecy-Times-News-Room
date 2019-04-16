@@ -50,13 +50,18 @@ displayDefaultArticles(){
   }
 }
 
-
+handleChange(e){
+  const value = e.target.value;
+  this.GetNewsAPIData(value);
+}
 render()
 {
   this.displayDefaultArticles();
 
   return(<div>ARTICLE FORMATTER
-          <NewsAPI searchVal = "notre dame" p/>
+
+      <input onChange={this.handleChange.bind(this)} class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
+          <NewsAPI searchVal = "notre dame" />
           </div>);
 
 }
