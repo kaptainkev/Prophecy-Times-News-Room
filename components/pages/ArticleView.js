@@ -105,8 +105,8 @@ handleChange(e){
 }
 
 
-    return (
-      <div>    
+return (
+  <div>    
   <div class="band col-sm-4">
      <p>Categories</p>
     
@@ -119,7 +119,7 @@ handleChange(e){
 
     <div class="band col-sm-8">
 
-       
+             <input onChange={this.handleChange.bind(this)} class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
 
     </div>    
 
