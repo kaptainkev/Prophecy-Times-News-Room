@@ -4,7 +4,7 @@ import {router, Route, IndexRoute, hashHistory} from "react-router";
 import axios from 'axios';
 import NewsAPI from '../newsAPI/NewsAPI';
 
-var defaultArticles = require('../newsAPI/NewsAPI.js').defaultArticles;
+var defaultArticles = require('../newsAPI/NewsAPI.js').dosomething;
 
 export default class ArticleFormatter extends Component {
 
@@ -20,7 +20,13 @@ componentDidMount()
  
 displayDefaultArticles(){
     const posted = this.state.posted;
+    defaultArticles(22);
+    
+
+  
     const displaypostshtml = 0;
+
+  
     if (displaypostshtml == 0)
     {
       displaypostshtml =  <div class="loader">Loading...</div>; 
@@ -57,7 +63,7 @@ displayDefaultArticles(){
 render()
 {
   const articleDiv = this.displayDefaultArticles();
-
+ 
   return(<div>ARTICLE FORMATTER
 
         

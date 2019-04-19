@@ -33,9 +33,7 @@ GetNewsAPIData(searchVal)
 {
 
 
-  var  dosomething = function(num){return x;}
-  exports.dosomething = dosomething;
-
+  
   //axios.get('https://jsonplaceholder.typicode.com/todos/1/posts').then(res => {
   //console.log(res)
   //this.setState({ posts: res.data.slice(0,10) })
@@ -73,6 +71,8 @@ render(){
 }
 
 
+var  dosomething = function(num){console.log("TEST")}
+  exports.dosomething = dosomething;
 
 export default NewsAPI;
 
