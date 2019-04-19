@@ -20,16 +20,15 @@ componentDidMount()
  
 displayDefaultArticles(){
     const posted = this.state.posted;
-    defaultArticles(22);
-    
+    posted  = defaultArticles(22);    
 
   
     const displaypostshtml = 0;
-
   
     if (displaypostshtml == 0)
     {
-      displaypostshtml =  <div class="loader">Loading...</div>; 
+      displaypostshtml =  <div class="loader">Loading...</div>;
+       
       if(posted != undefined)
       {
         displaypostshtml = <div><p>No Results for {this.state.search}</p></div>

@@ -71,10 +71,39 @@ render(){
 }
 
 
-var  dosomething = function(num){console.log("TEST")}
-  exports.dosomething = dosomething;
 
 export default NewsAPI;
 
 
+
+var accessUrl =  function()
+{
+  var searchVal = "";
+  var domain = "wsj.com";
+
+  return 'https://newsapi.org/v2/everything?q=' + searchVal + '&domains=wsj.com&apiKey=f129749be7d6479c802c840bd952da97';
+  
+}
+
+var  dosomething = function(num){
+   
+   
+   axios({
+        method: 'get',
+        url: accessUrl,
+      })
+    .then(function (data) {
+      //console.log('Success ' + JSON.stringify(data))
+      //this.setState({posted: data});
+    
+      console.log(data);
+      
+      return data;
+
+    }.bind(this))
+    .catch(function (error) {
+      console.log('Error ' + error.message)
+    }); 
+    }
+  exports.dosomething = dosomething;
 
