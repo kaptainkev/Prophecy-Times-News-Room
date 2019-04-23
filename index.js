@@ -12,6 +12,19 @@ import 'bootstrap/dist/js/bootstrap.js';
 import BookView from './components/pages/BookView';
 import ArticleView from './components/pages/ArticleView';
 
+import {createStore} from 'redux';
+
+
+
+
+function reducer(){
+
+  return 'State';
+}
+
+const action 
+const store = createStore(reducer); 
+console.log(store.getState());
 
 class App extends Component {
   constructor() {
@@ -22,7 +35,7 @@ class App extends Component {
   }
 
 
-
+   
   render() {
     return (
       <div>
@@ -35,5 +48,4 @@ class App extends Component {
   }
 }
 
-render(
-<Layout/>, document.getElementById('root'));
+render(<Layout/>, document.getElementById('root'));
