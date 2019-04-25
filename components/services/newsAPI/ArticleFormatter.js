@@ -20,7 +20,7 @@ componentDidMount()
  
 displayDefaultArticles(){
     const posted = this.state.posted;
-    posted  = defaultArticles(22);    
+    //posted  = defaultArticles(22);    
 
   
     const displaypostshtml = 0;

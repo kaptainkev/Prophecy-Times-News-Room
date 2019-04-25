@@ -15,16 +15,27 @@ import ArticleView from './components/pages/ArticleView';
 import {createStore} from 'redux';
 
 
+const action = {
+  type: 'changeState',
+  payload:{
+    newState: 'New State'
+  }
+} 
+function reducer( state, action){
+  if(action.type == 'changeState'){
+    return action.payload.newState;
+  }
 
-
-function reducer(){
-
-  return 'State';
+  if(action.type == 'notChanged'){
+    return "1";
+  }
 }
 
-const action 
 const store = createStore(reducer); 
+
 console.log(store.getState());
+
+store.dispatch(action);
 
 class App extends Component {
   constructor() {
