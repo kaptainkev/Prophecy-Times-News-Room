@@ -12,30 +12,39 @@ import 'bootstrap/dist/js/bootstrap.js';
 import BookView from './components/pages/BookView';
 import ArticleView from './components/pages/ArticleView';
 
-import {createStore} from 'redux';
-
+import {combineReducers, createStore} from 'redux';
 
 const action = {
-  type: 'changeState',
-  payload:{
-    newState: 'New State'
-  }
-} 
-function reducer( state, action){
-  if(action.type == 'changeState'){
-    return action.payload.newState;
-  }
-
-  if(action.type == 'notChanged'){
-    return "1";
-  }
+  type: 'products',
+  waterLog: 'Meg'
 }
 
-const store = createStore(reducer); 
+function productsReducer( state = [], action){
+ if(action.type == 'products'){
+   return 'YES';
+ }
+ return state;
+}
 
-console.log(store.getState());
+function userReducer(state =  '', action ){
+  return state;
+}
+
+const allReducers  = combineReducers({
+  products: productsReducer,
+  user: userReducer
+})
+
+const state = {
+  products: [{name: 'iphone'}],
+  user: 'Michael'
+}
+const store = createStore(allReducers, state); 
+
 
 store.dispatch(action);
+
+console.log(store.getState());
 
 class App extends Component {
   constructor() {
@@ -51,7 +60,7 @@ class App extends Component {
     return (
       <div>
         <Hello name={this.state.name} />
-
+        
         <p>
         </p>
       </div>
