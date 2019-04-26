@@ -19,14 +19,23 @@ const action = {
   waterLog: 'Meg'
 }
 
+
+const updateUserAction  = {type: 'updateUser',
+                           payload: {user:'John'}}
+
 function productsReducer( state = [], action){
- if(action.type == 'products'){
-   return 'YES';
+ switch(action.type){
+   case 'updateUser':
+    return 'NewsAPI';
  }
  return state;
 }
 
-function userReducer(state =  '', action ){
+function userReducer(state =  '' , action){
+  switch(action.type){
+    case 'updateUser':
+      return action.payload;
+  }
   return state;
 }
 
@@ -36,13 +45,19 @@ const allReducers  = combineReducers({
 })
 
 const state = {
-  products: [{name: 'iphone'}],
+  products: [{name: 'iphone'}, [{ state: 'ME'}] ],
   user: 'Michael'
 }
-const store = createStore(allReducers, state); 
+
+const devTools = window.devToolsExtension && window.devToolsExtension();
+const store = createStore(allReducers, state, devTools ); 
+
 
 
 store.dispatch(action);
+console.log(store.getState());
+
+store.dispatch(updateUserAction);
 
 console.log(store.getState());
 
