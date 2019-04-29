@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { render } from 'react-dom';
 import '../../CSS/articles.css';
 import Logo from '../pages/Logo';
+import {Provider} from 'redux';
 
 class Home extends Component {
   constructor() {
@@ -14,7 +15,7 @@ class Home extends Component {
   render() {
     return (
       <div >
-      
+      <Provider/>
 
 
      <header>
@@ -29,6 +30,7 @@ class Home extends Component {
          
     <Logo/>
 
+    
     </div>
  
 
