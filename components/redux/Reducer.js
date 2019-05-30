@@ -10,21 +10,9 @@ const action = {
 
 
 
-function productsReducer( state = [], action){
- switch(action.type){
-   case 'updateUser':
-    return 'NewsAPI';
- }
- return state;
-}
 
-function userReducer(state =  '' , {type, payload} ){
-  switch(type){
-    case 'updateUser':
-      return payload;
-  }
-  return state;
-}
+
+
 
 const allReducers  = combineReducers({
   products: productsReducer,
