@@ -9,19 +9,28 @@ const action = {
 }
 
 
+const ArticleReducer = (state = {}, action) =>
+{
+  return state;
+};
 
-
+const BookReducer = (state = {}, action) =>
+{
+  return state;
+};
 
 
 
 const allReducers  = combineReducers({
   articleInfo: ArticlesReducer,
-  user: userReducer
+  book: BookReducer
 })
 
 const state = {
-  articleInfo: [{name: 'iphone'}, [{ date: ''}] ],
-  user: 'Michael'
+  articleInfo: [
+    {name: 'iphone'}, 
+    [{ date: ''} ] ],
+  book: 'Michael'
 }
 
 const devTools = window.devToolsExtension && window.devToolsExtension();

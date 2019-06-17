@@ -7,6 +7,7 @@ import '../../CSS/articles.css';
 
 import ArticleFormatter from '../services/newsAPI/ArticleFormatter';
 
+
 export default class ArticleView extends Component {
   constructor() {
     super();
