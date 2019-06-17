@@ -4,7 +4,7 @@ import {Provider} from 'react-redux';
 
 
 const action = {
-  type: 'products',
+  type: 'articleInfo',
   waterLog: 'Meg'
 }
 
@@ -15,12 +15,12 @@ const action = {
 
 
 const allReducers  = combineReducers({
-  products: productsReducer,
+  articleInfo: ArticlesReducer,
   user: userReducer
 })
 
 const state = {
-  products: [{name: 'iphone'}, [{ state: 'ME'}] ],
+  articleInfo: [{name: 'iphone'}, [{ date: ''}] ],
   user: 'Michael'
 }
 
