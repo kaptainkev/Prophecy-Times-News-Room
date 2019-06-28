@@ -9,7 +9,7 @@ const action = {
 }
 
 
-const ArticleReducer = (state = {}, action) =>
+const ArticlesReducer = (state = {}, action) =>
 {
   return state;
 };
