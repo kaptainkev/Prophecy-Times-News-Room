@@ -19,6 +19,7 @@ export default class ArticleFormatter extends Component {
 componentDidMount()
 {
   console.log("Reducer");
+ 
  }
 
 
