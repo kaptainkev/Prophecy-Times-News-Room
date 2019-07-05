@@ -18,9 +18,10 @@ export default class ArticleFormatter extends Component {
 }
 componentDidMount()
 {
-  console.log("Reducer");
- 
- }
+    console.log("Reducer");
+    console.log(Reducer);
+
+}
 
 
 
@@ -76,9 +77,9 @@ render()
           <NewsAPI searchVal = "notre " />
           {articleDiv}
 
-          <Reducer/>
           </div>);
 
 }
 
 }
+

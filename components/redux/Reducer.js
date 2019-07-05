@@ -40,3 +40,5 @@ const store = createStore(allReducers, state, devTools );
 
 store.dispatch(action);
 console.log(store.getState());
+
+export default allReducers;
