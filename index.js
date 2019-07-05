@@ -13,9 +13,12 @@ import BookView from './components/pages/BookView';
 import ArticleView from './components/pages/ArticleView';
 
 
+import {Provider} from 'react-redux';
+import { createStore} from 'redux';
+import allReducers from './components/redux/Reducer';
 
 
-
+const store = createStore(allReducers);
 
 class App extends Component {
   constructor() {
@@ -39,4 +42,7 @@ class App extends Component {
   }
 }
 
-render(<Layout/>, document.getElementById('root'));
+render(
+  <Provider store = {store}>
+  <Layout/>
+  </Provider>, document.getElementById('root'));

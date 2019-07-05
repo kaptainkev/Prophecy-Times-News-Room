@@ -20,7 +20,9 @@ componentDidMount()
 {
     console.log("Reducer");
     console.log(Reducer);
+    
 
+   
 }
 
 

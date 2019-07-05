@@ -4,7 +4,7 @@ import {Provider} from 'react-redux';
 
 
 const action = {
-  type: 'articleInfo',
+  type: 'searchQuery',
   waterLog: 'Meg'
 }
 
@@ -22,13 +22,13 @@ const BookReducer = (state = {}, action) =>
 
 
 const allReducers  = combineReducers({
-  articleInfo: ArticlesReducer,
+  searchQuery: ArticlesReducer,
   book: BookReducer
 })
 
 const state = {
-  articleInfo: [
-    {name: 'iphone'}, 
+  searchQuery: [
+    {name: 'pope'}, 
     [{ date: ''} ] ],
   book: 'Michael'
 }
