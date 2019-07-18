@@ -11,7 +11,15 @@ const action = {
 
 const ArticlesReducer = (state = {}, action) =>
 {
+  switch(action.type){
+    case "UPDATE_ARTICLE": 
+    {
+      state = {...state, searchQuery:action.payload}
+      break;
+    }
+  }
   return state;
+
 };
 
 const BookReducer = (state = {}, action) =>

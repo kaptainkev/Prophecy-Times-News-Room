@@ -4,7 +4,7 @@ import {router, Route, IndexRoute, hashHistory} from "react-router";
 import axios from 'axios';
 import NewsAPI from '../newsAPI/NewsAPI';
 
-
+import actions from '../../redux/actions/rActions'
 import Reducer from '../../redux/Reducer';
 
 var defaultArticles = require('../newsAPI/NewsAPI.js').dosomething;
@@ -18,10 +18,10 @@ export default class ArticleFormatter extends Component {
 }
 componentDidMount()
 {
-    console.log("Reducer");
-    console.log(Reducer);
-    
+  
 
+    
+    
    
 }
 
