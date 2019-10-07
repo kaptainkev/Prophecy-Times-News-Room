@@ -9,3 +9,13 @@ const TOGGLE_TODO =
   type: TOGGLE_TODO,
   index: 2
 }
+
+
+function addTODO(){
+
+  const action = {
+
+    type: ADD_TODO,
+    text: "Build my Redux TEST"
+  }
+}
