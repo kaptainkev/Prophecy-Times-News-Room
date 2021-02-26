@@ -33,7 +33,7 @@ displayDefaultArticles(){
     //posted  = defaultArticles(22);    
 
   
-    const displaypostshtml = 0;
+    var displaypostshtml = 0;
   
     if (displaypostshtml == 0)
     {
